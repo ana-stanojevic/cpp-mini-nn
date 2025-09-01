@@ -9,7 +9,7 @@ The goal is to showcase **C++/systems thinking**, memory handling, numerical met
 - Dense layers with sigmoid activation
 - Simple stochastic gradient descent (SGD)
 - Tiny demo: learning XOR
-- CMake build + unit tests (ready for GitHub Actions CI)
+- CMake build + unit tests + GitHub Actions
 
 ---
 
@@ -86,7 +86,7 @@ It also serves as an educational reference for how a basic MLP works without rel
 - **Language:** C++20  
 - **Build system:** CMake  
 - **Testing:** ctest + assertions  
-- **CI-ready:** GitHub Actions workflow can be easily added  
+- **CI-ready:** GitHub Actions  
 
 ---
 
