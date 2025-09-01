@@ -93,6 +93,6 @@ It also serves as an educational reference for how a basic MLP works without rel
 ## 👩‍💻 Author
 
 **Ana Stanojevic**  
-[Scholar ↗](https://bit.ly/ana-stanojevic+) • [CV ↗](https://bit.ly/ana-stanojevic-cv+)  
+[Scholar ↗](https://bit.ly/ana-stanojevic) • [CV ↗](https://bit.ly/ana-stanojevic-cv)  
 
 ---
