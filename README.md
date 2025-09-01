@@ -1,0 +1,98 @@
+# cpp-mini-nn
+
+A minimal **multi-layer perceptron (MLP)** implemented **from scratch in modern C++20** (no external dependencies).  
+The goal is to showcase **C++/systems thinking**, memory handling, numerical methods, and CMake-based builds.  
+
+---
+
+## ✨ Features
+- Dense layers with sigmoid activation
+- Simple stochastic gradient descent (SGD)
+- Tiny demo: learning XOR
+- CMake build + unit tests (ready for GitHub Actions CI)
+
+---
+
+## 📂 Project structure
+
+```text
+cpp-mini-nn/
+├─ CMakeLists.txt
+├─ README.md
+├─ LICENSE
+├─ .gitignore
+├─ include/
+│  └─ nn.hpp
+├─ src/
+│  └─ nn.cpp
+├─ examples/
+│  └─ xor_demo.cpp
+└─ tests/
+   └─ test_nn.cpp
+```
+
+---
+
+## 🚀 Quick start
+
+Clone the repo and build the project:
+
+```bash
+git clone https://github.com/ana-stanojevic/cpp-mini-nn.git
+cd cpp-mini-nn
+
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+cmake --build build -j
+```
+
+Run the XOR demo:
+
+```bash
+./build/xor_demo
+```
+
+Expected output:
+
+```
+0 XOR 0 -> ~0.0
+0 XOR 1 -> ~1.0
+1 XOR 0 -> ~1.0
+1 XOR 1 -> ~0.0
+```
+
+---
+
+## 🧪 Running tests
+
+Build and run tests:
+
+```bash
+ctest --test-dir build --output-on-failure
+```
+
+The unit test (`tests/test_nn.cpp`) verifies that the network learns the XOR function (≈95–100% accuracy).  
+
+---
+
+## ❓ Why this project
+
+This repo is a **lightweight showcase** to keep my **C++ skills sharp** while working on applied AI/ML systems (where PyTorch is usually the main tool).  
+It also serves as an educational reference for how a basic MLP works without relying on large frameworks.  
+
+---
+
+## ⚙️ Tech stack
+
+- **Language:** C++20  
+- **Build system:** CMake  
+- **Testing:** ctest + assertions  
+- **CI-ready:** GitHub Actions workflow can be easily added  
+
+---
+
+## 👩‍💻 Author
+
+**Ana Stanojevic**  
+[Scholar ↗](https://bit.ly/ana-stanojevic+) • [CV ↗](https://bit.ly/ana-stanojevic-cv+)  
+
+---
