@@ -1,5 +1,9 @@
 # cpp-mini-nn
 
+![CI](https://github.com/<user>/cpp-mini-nn/actions/workflows/cmake-ci.yml/badge.svg)
+![C++](https://img.shields.io/badge/C++-17-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+
 A minimal **multi-layer perceptron (MLP)** implemented **from scratch in modern C++20** (no external dependencies).  
 The goal is to showcase **C++/systems thinking**, memory handling, numerical methods, and CMake-based builds.  
 
@@ -96,3 +100,6 @@ It also serves as an educational reference for how a basic MLP works without rel
 [Scholar ↗](https://bit.ly/ana-stanojevic) • [CV ↗](https://bit.ly/ana-stanojevic-cv)  
 
 ---
+
+## 📜 License  
+MIT License — free to use, modify and distribute.  
