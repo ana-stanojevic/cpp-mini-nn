@@ -1,7 +1,7 @@
 # cpp-mini-nn
 
 ![CI](https://github.com/<user>/cpp-mini-nn/actions/workflows/cmake-ci.yml/badge.svg)
-![C++](https://img.shields.io/badge/C++-17-blue.svg)
+![C++](https://img.shields.io/badge/C++-20-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 A minimal **multi-layer perceptron (MLP)** implemented **from scratch in modern C++20** (no external dependencies).  
