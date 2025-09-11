@@ -4,7 +4,7 @@
 ![C++](https://img.shields.io/badge/C++-20-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-A minimal **multi-layer perceptron (MLP)** implemented **from scratch in modern C++20** (no external dependencies).  
+A minimal **multi-layer perceptron (MLP)** implemented **in modern C++20**.  
 The goal is to showcase **C++/systems thinking**, memory handling, numerical methods, and CMake-based builds.  
 
 ---
