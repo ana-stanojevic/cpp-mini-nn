@@ -2,7 +2,6 @@
 #include <iostream>
 
 int main() {
-  
   MLP net({2, 4, 1});
   Eigen::MatrixXd inputs(4, 2);
   Eigen::MatrixXd targets(4, 1);
