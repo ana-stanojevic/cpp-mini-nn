@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 4.1)
-project(cpp_mini_nn LANGUAGES C++)
+project(cpp_mini_nn LANGUAGES CXX)
 
 set(CMAKE_C++_STANDARD 20)
 set(CMAKE_C++_STANDARD_REQUIRED ON)
@@ -15,6 +15,7 @@ target_link_libraries(xor_demo PRIVATE mininn)
 enable_testing()
 add_executable(test_nn tests/test_nn.cpp)
 target_link_libraries(test_nn PRIVATE mininn)
+target_include_directories(test_nn PRIVATE /opt/homebrew/include/doctest)
 add_test(NAME nn_tests COMMAND test_nn)
 
 

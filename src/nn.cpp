@@ -69,10 +69,11 @@ void MLP::train(const Eigen::MatrixXd &inputs, const Eigen::MatrixXd &targets, i
                     );
                 }
 
-        }
+            }
         total_loss /= inputs.rows();
         std::cout << "Epoch " << epoch << "/" << epochs << ", Loss: " << total_loss << std::endl;
-    }   
+        }
+    }
 }
 
 

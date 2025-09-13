@@ -13,7 +13,7 @@ int main() {
              1,
              1,
              0;
-  net.train(inputs, targets, 2000, 0.1);
+  net.train(inputs, targets, 10000, 0.5);
   for (int i = 0; i < inputs.rows(); ++i) {
     Eigen::VectorXd y = net.forward(inputs.row(i));
     std::cout << inputs(i, 0) << " xor " << inputs(i, 1) << " -> " << y[0] << "\n";
