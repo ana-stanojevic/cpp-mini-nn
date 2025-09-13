@@ -89,6 +89,8 @@ It also serves as an educational reference for how a basic MLP works without rel
 
 - **Language:** C++20  
 - **Build system:** CMake  
+- **Linear algebra:** [Eigen](https://eigen.tuxfamily.org/) (header-only)
+- **Optional acceleration:** OpenBLAS (via CMake option)
 - **Testing:** ctest + assertions  
 - **CI-ready:** GitHub Actions  
 
