@@ -1,6 +1,6 @@
 # cpp-mini-nn
 
-![CI](https://github.com/ana-stanojevic/cpp-mini-nn/tree/main/.github/workflows/cpp-ci.yml/badge.svg)
+![CI](https://github.com/ana-stanojevic/cpp-mini-nn/actions/workflows/cpp-ci.yml/badge.svg?branch=main)
 ![C++](https://img.shields.io/badge/C++-20-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 

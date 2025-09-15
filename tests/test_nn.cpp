@@ -1,5 +1,5 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
-#include "doctest.h"
+#include "doctest/doctest.h"
 #include "nn.hpp"
 
 TEST_CASE("Forward output size matches last layer size") {
