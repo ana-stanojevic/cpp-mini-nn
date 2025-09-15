@@ -80,7 +80,7 @@ The unit test (`tests/test_nn.cpp`) verifies that the network learns the XOR fun
 
 ## ❓ Why this project
 
-This repo is a **lightweight showcase** to keep my **C++ skills sharp** while working on applied AI/ML systems (where PyTorch is usually the main tool).  
+This repo is a **lightweight showcase** to keep my **C++ skills sharp** while working on an example of AI/ML system. 
 It also serves as an educational reference for how a basic MLP works without relying on large frameworks.  
 
 ---
