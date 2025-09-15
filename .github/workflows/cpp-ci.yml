@@ -1,0 +1,50 @@
+name: C++ CI
+
+on:
+  push:
+    branches: [ main ]
+    tags: ['v*.*.*']  # e.g. v1.0.0, v2.3.1
+  pull_request:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y cmake clang-tidy
+
+      - name: Configure
+        run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+
+      - name: Lint (clang-tidy)
+        run: cmake --build build --target clang-tidy || true
+
+      - name: Build
+        run: cmake --build build --config Release -j 2
+
+      - name: Test
+        run: ctest --test-dir build --output-on-failure
+
+      - name: Package binary
+        run: |
+          mkdir -p artifacts
+          cp build/xor_demo artifacts/ || true
+          cp build/test_nn artifacts/ || true
+          cp build/libmininn.a artifacts/ || true
+        if: startsWith(github.ref, 'refs/tags/')
+
+      - name: Package source
+        run: |
+          mkdir -p artifacts
+          git archive --format zip --output artifacts/source.zip HEAD
+        if: startsWith(github.ref, 'refs/tags/')
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: artifacts/*
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        if: startsWith(github.ref, 'refs/tags/')

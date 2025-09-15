@@ -3,6 +3,7 @@ project(cpp_mini_nn LANGUAGES CXX)
 
 set(CMAKE_C++_STANDARD 20)
 set(CMAKE_C++_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_CLANG_TIDY "clang-tidy;-checks=*")
 find_package(Eigen3 3.4 REQUIRED NO_MODULE)
 
 add_library(mininn src/nn.cpp)
