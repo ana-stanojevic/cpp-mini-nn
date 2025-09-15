@@ -4,7 +4,7 @@
 ![C++](https://img.shields.io/badge/C++-20-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-A minimal **multi-layer perceptron (MLP)** implemented **in modern C++20**.  
+A **multi-layer perceptron (MLP)** implemented **in modern C++20**.  
 The goal is to showcase **C++/systems thinking**, memory handling, numerical methods, and CMake-based builds.  
 
 ---
@@ -80,7 +80,7 @@ The unit test (`tests/test_nn.cpp`) verifies that the network learns the XOR fun
 
 ## ❓ Why this project
 
-This repo is a **lightweight showcase** to keep my **C++ skills sharp** while working on an example of AI/ML system. 
+This repo is a **showcase** of my **C++ skills** while working on an example of AI/ML system. 
 It also serves as an educational reference for how a basic MLP works without relying on large frameworks.  
 
 ---
