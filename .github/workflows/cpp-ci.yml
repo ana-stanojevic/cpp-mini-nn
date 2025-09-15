@@ -32,7 +32,7 @@ jobs:
           mkdir -p artifacts
           cp build/xor_demo artifacts/ || true
           cp build/test_nn artifacts/ || true
-          cp build/libmininn.a artifacts/ || true
+          cp build/libffn.a artifacts/ || true
         if: startsWith(github.ref, 'refs/tags/')
 
       - name: Package source

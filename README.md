@@ -1,6 +1,6 @@
-# cpp-mini-nn
+# cpp-ffn
 
-![CI](https://github.com/ana-stanojevic/cpp-mini-nn/actions/workflows/cpp-ci.yml/badge.svg?branch=main)
+![CI](https://github.com/ana-stanojevic/cpp-ffn/actions/workflows/cpp-ci.yml/badge.svg?branch=main)
 ![C++](https://img.shields.io/badge/C++-20-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
@@ -20,7 +20,7 @@ The goal is to showcase **C++/systems thinking**, memory handling, numerical met
 ## 📂 Project structure
 
 ```text
-cpp-mini-nn/
+cpp-ffn/
 ├─ CMakeLists.txt
 ├─ README.md
 ├─ LICENSE
@@ -42,8 +42,8 @@ cpp-mini-nn/
 Clone the repo and build the project:
 
 ```bash
-git clone https://github.com/ana-stanojevic/cpp-mini-nn.git
-cd cpp-mini-nn
+git clone https://github.com/ana-stanojevic/cpp-ffn.git
+cd cpp-ffn
 
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build -j
@@ -91,7 +91,7 @@ It also serves as an educational reference for how a basic MLP works without rel
 - **Build system:** CMake  
 - **Linear algebra:** [Eigen](https://eigen.tuxfamily.org/) (header-only)
 - **Optional acceleration:** OpenBLAS (via CMake option)
-- **Testing:** ctest + assertions  
+- **Testing:** ctest + doctest 
 - **CI-ready:** GitHub Actions  
 
 ---
